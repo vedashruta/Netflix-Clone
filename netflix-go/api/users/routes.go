@@ -12,4 +12,6 @@ func Route(router fiber.Router) {
 
 	users.Post("/create", timeout.NewWithContext(create, config.Config.Server.Timeout))
 	users.Post("/getWatchlist", timeout.NewWithContext(getWatchlist, config.Config.Server.Timeout))
+	users.Post("/update", timeout.NewWithContext(update, config.Config.Server.Timeout))
+	users.Post("/delete", timeout.NewWithContext(delete, config.Config.Server.Timeout))
 }

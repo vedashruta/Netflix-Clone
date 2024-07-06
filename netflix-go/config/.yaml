@@ -1,0 +1,11 @@
+server:
+  port: :9800
+  timeout: 5s
+database: 
+  # use this to map go-app running in docker to mongodb running locally
+  # uri: mongodb://host.docker.internal:27017
+  # for multi-containerized application mongodb://container-name:port
+  # uri: mongodb://mongo-db:27017
+  uri: mongodb://localhost:27017
+  db: netflix-clone
+  timeout: 5s

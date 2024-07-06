@@ -3,13 +3,13 @@ package users
 import "go.mongodb.org/mongo-driver/bson/primitive"
 
 type Model struct {
-	ID          primitive.ObjectID `json:"_id" bson:"_id"`
-	Name        Name               `json:"name" bson:"name"`
-	PhoneNumber int                `json:"phoneNumber" bson:"phoneNumber"`
-	Email       string             `json:"email" bson:"email"`
-	UPass       string             `json:"password" bson:"password"`
-	Profiles    []Profile          `json:"profile" bson:"profile"`
-	Billing     Billing            `json:"billing" bson:"billing"`
+	ID       primitive.ObjectID `json:"_id" bson:"_id"`
+	Name     Name               `json:"name" bson:"name"`
+	Phone    int                `json:"phone" bson:"phone"`
+	Email    string             `json:"email" bson:"email"`
+	Password string             `json:"password" bson:"password"`
+	Profiles []Profile          `json:"profile" bson:"profile"`
+	Billing  Billing            `json:"billing" bson:"billing"`
 }
 
 type Name struct {

@@ -10,7 +10,7 @@ import (
 )
 
 func Init() (err error) {
-	fileName := "env/.yaml"
+	fileName := "config/.yaml"
 	file, err := os.Open(fileName)
 	if err != nil {
 		return

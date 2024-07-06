@@ -1,7 +1,0 @@
-server:
-  port: :9800
-  timeout: 5s
-database: 
-  uri: mongodb://localhost:27017
-  db: netflix-clone
-  timeout: 5s
