@@ -19,7 +19,7 @@ type Name struct {
 
 type Profile struct {
 	ID           primitive.ObjectID   `json:"id" bson:"id"`
-	ProfileName  string               `json:"profileName" bson:"profileName"`
+	Name         string               `json:"name" bson:"name"`
 	Avatar       string               `json:"avatar" bson:"avatar"`
 	Watchlist    []primitive.ObjectID `json:"watchlist" bson:"watchlist"`
 	Watchhistory []primitive.ObjectID `json:"watchhistory" bson:"watchhistory"`
